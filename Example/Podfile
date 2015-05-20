@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'XMPPChat', :exclusive => true do
+  pod "XMPPChat", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "XMPPChat", :path => "../"
+
+  
+end

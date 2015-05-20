@@ -1,0 +1,14 @@
+PODS:
+  - XMPPChat (0.1.0)
+
+DEPENDENCIES:
+  - XMPPChat (from `../`)
+
+EXTERNAL SOURCES:
+  XMPPChat:
+    :path: ../
+
+SPEC CHECKSUMS:
+  XMPPChat: 4b9b7f16d94564a55627efec274decad1c2aa4fc
+
+COCOAPODS: 0.37.0
