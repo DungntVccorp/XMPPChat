@@ -18,12 +18,7 @@
 
 // Log levels: off, error, warn, info, verbose
 // Log flags: trace
-#if DEBUG
-  static const int xmppLogLevel = XMPP_LOG_LEVEL_WARN; // | XMPP_LOG_FLAG_TRACE;
-#else
-  static const int xmppLogLevel = XMPP_LOG_LEVEL_WARN;
-#endif
-
+static const int xmppLogLevel = XMPP_LOG_LEVEL_ERROR;
 @interface XMPPvCardTempModule()
 
 - (void)_updatevCardTemp:(XMPPvCardTemp *)vCardTemp forJID:(XMPPJID *)jid;

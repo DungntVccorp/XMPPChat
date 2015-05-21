@@ -113,7 +113,6 @@
 
 +(instancetype)shareIntanceWithHostName:(NSString *)hostName hostPort:(UInt16)hostport;
 
--(void)loginWithUserName:(NSString *)username password:(NSString *)password;
 
 
 @end

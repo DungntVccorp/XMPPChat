@@ -17,11 +17,7 @@
 #warning This file must be compiled with ARC. Use -fobjc-arc flag (or convert project to ARC).
 #endif
 
-#if DEBUG
-  static const int xmppLogLevel = XMPP_LOG_LEVEL_ERROR;
-#else
-  static const int xmppLogLevel = XMPP_LOG_LEVEL_ERROR;
-#endif
+static const int xmppLogLevel = XMPP_LOG_LEVEL_ERROR;
 
 
 @implementation XMPPvCardTempEmail
