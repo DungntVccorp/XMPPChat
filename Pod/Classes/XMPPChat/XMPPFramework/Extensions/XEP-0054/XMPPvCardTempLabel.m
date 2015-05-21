@@ -17,7 +17,7 @@
 #warning This file must be compiled with ARC. Use -fobjc-arc flag (or convert project to ARC).
 #endif
 
-static const int xmppLogLevel = XMPP_LOG_LEVEL_ERROR;
+
 
 @implementation XMPPvCardTempLabel
 
@@ -39,8 +39,6 @@ static const int xmppLogLevel = XMPP_LOG_LEVEL_ERROR;
 	
 	if (superSize != ourSize)
 	{
-		XMPPLogError(@"Adding instance variables to XMPPvCardTempLabel is not currently supported!");
-		
 		[DDLog flushLog];
 		exit(15);
 	}

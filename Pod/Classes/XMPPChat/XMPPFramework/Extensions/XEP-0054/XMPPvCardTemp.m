@@ -19,7 +19,7 @@
 #warning This file must be compiled with ARC. Use -fobjc-arc flag (or convert project to ARC).
 #endif
 
-static const int xmppLogLevel = XMPP_LOG_LEVEL_ERROR;
+
 
 
 NSString *const kXMPPNSvCardTemp = @"vcard-temp";
@@ -46,8 +46,6 @@ NSString *const kXMPPvCardTempElement = @"vCard";
 	
 	if (superSize != ourSize)
 	{
-		XMPPLogError(@"Adding instance variables to XMPPvCardTemp is not currently supported!");
-		
 		[DDLog flushLog];
 		exit(15);
 	}

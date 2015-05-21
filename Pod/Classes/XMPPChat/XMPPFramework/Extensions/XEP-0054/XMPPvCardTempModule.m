@@ -18,7 +18,7 @@
 
 // Log levels: off, error, warn, info, verbose
 // Log flags: trace
-static const int xmppLogLevel = XMPP_LOG_LEVEL_ERROR;
+
 @interface XMPPvCardTempModule()
 
 - (void)_updatevCardTemp:(XMPPvCardTemp *)vCardTemp forJID:(XMPPJID *)jid;
@@ -64,10 +64,6 @@ static const int xmppLogLevel = XMPP_LOG_LEVEL_ERROR;
 		if ([storage configureWithParent:self queue:moduleQueue])
 		{
 			_xmppvCardTempModuleStorage = storage;
-		}
-		else
-		{
-			XMPPLogError(@"%@: %@ - Unable to configure storage!", THIS_FILE, THIS_METHOD);
 		}
 	}
 	return self;
@@ -211,7 +207,6 @@ static const int xmppLogLevel = XMPP_LOG_LEVEL_ERROR;
 	// this method could be called from anywhere
 	dispatch_block_t block = ^{ @autoreleasepool {
 		
-		XMPPLogVerbose(@"%@: %s %@", THIS_FILE, __PRETTY_FUNCTION__, [jid bare]);
 		
 		[_xmppvCardTempModuleStorage setvCardTemp:vCardTemp forJID:jid xmppStream:xmppStream];
 		
